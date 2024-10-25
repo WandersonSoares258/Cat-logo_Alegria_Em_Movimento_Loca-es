@@ -75,8 +75,8 @@ header {
 }
 
 .carousel-image {
-    width: 400px; /* Tamanho fixo para todas as imagens */
-    height: 400px; /* Altura fixa para manter as proporções */
+    width: 350px; /* Tamanho fixo para todas as imagens */
+    height: 350px; /* Altura fixa para manter as proporções */
     object-fit: cover; /* A imagem será cortada para preencher a área */
 }
 
