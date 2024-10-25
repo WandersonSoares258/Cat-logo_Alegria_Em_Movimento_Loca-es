@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="imagens/favicon-32x32.png">
+    <title>Alegria em Movimento Locações</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="imagens/logo.png" alt="Logo Alegria em Movimento Locações">
+            <div class="text-container">
+                <h1 class="titulo">Alegria em Movimento Locações</h1>
+                <h2 class="titulo">Transformando momentos em diversão!🎉</h2>
+            </div>
+        </div>
+    </header>    
+    <section class="portfolio">
+         <!-- Algodão Doce -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/algodao-doce1.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/algodao-doce1.jpg" alt="Algodão Doce 1">
+                    <img class="carousel-image" src="imagens/algodao-doce2.jpg" alt="Algodão Doce 2">
+                    <img class="carousel-image" src="imagens/algodao-doce3.jpg" alt="Algodão Doce 3">
+                    <img class="carousel-image" src="imagens/algodao-doce4.jpg" alt="Algodão Doce 4">
+                    <button class="prev" onclick="plusSlides(-1, 0)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 0)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="videos/algodao-doce.jpg" alt="Miniatura Vídeo" onclick="currentSlide(0, 0)">
+                    <img src="imagens/algodao-doce1.jpg" alt="Miniatura 1" onclick="currentSlide(1, 0)">
+                    <img src="imagens/algodao-doce2.jpg" alt="Miniatura 2" onclick="currentSlide(2, 0)">
+                    <img src="imagens/algodao-doce3.jpg" alt="Miniatura 3" onclick="currentSlide(3, 0)">
+                    <img src="imagens/algodao-doce4.jpg" alt="Miniatura 4" onclick="currentSlide(4, 0)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Algodão Doce</h2>
+            <p>Adoce sua festa com nosso irresistível algodão doce! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Monitor incluso + Materiais, durante 4 horas!</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+         <!-- Castelinho Inflável -->
+         <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/castelinho-inflavel1.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/castelinho-inflavel1.jpg" alt="Castelinho Inflável 1">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/castelinho-inflavel2.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/castelinho-inflavel2.jpg" alt="Castelinho Inflável 2">
+                    <img class="carousel-image" src="imagens/castelinho-inflavel3.jpg" alt="Castelinho Inflável 3">
+                    <button class="prev" onclick="plusSlides(-1, 1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 1)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="videos/castelinho-inflavel1.jpg" alt="Miniatura Vídeo" onclick="currentSlide(0, 1)">
+                    <img src="imagens/castelinho-inflavel1.jpg" alt="Miniatura 1" onclick="currentSlide(1, 1)">
+                    <img src="videos/castelinho-inflavel2.jpg" alt="Miniatura Vídeo" onclick="currentSlide(2, 1)">
+                    <img src="imagens/castelinho-inflavel2.jpg" alt="Miniatura 2" onclick="currentSlide(3, 1)">
+                    <img src="imagens/castelinho-inflavel3.jpg" alt="Miniatura 3" onclick="currentSlide(4, 1)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Castelinho Inflável</h2>
+            <p>Diversão garantida com nosso castelinho inflável! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> 3m x 3m, Monitor incluso, durante 4 horas!</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Decoração pegue monte -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="imagens/decoracao1.jpg" alt="Decoração 1">
+                    <img class="carousel-image" src="imagens/decoracao2.jpg" alt="Decoração 2">
+                    <img class="carousel-image" src="imagens/decoracao3.jpg" alt="Decoração 3">
+                    <img class="carousel-image" src="imagens/decoracao4.jpg" alt="Decoração 4">
+                    <img class="carousel-image" src="imagens/decoracao5.jpg" alt="Decoração 5">
+                    <img class="carousel-image" src="imagens/decoracao6.jpg" alt="Decoração 6">
+                    <button class="prev" onclick="plusSlides(-1, 2)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 2)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="imagens/decoracao1.jpg" alt="Miniatura 1" onclick="currentSlide(0, 2)">
+                    <img src="imagens/decoracao2.jpg" alt="Miniatura 2" onclick="currentSlide(1, 2)">
+                    <img src="imagens/decoracao3.jpg" alt="Miniatura 3" onclick="currentSlide(2, 2)">
+                    <img src="imagens/decoracao4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 2)">
+                    <img src="imagens/decoracao5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 2)">
+                    <img src="imagens/decoracao6.jpg" alt="Miniatura 6" onclick="currentSlide(5, 2)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Decoração Pegue Monte</h2>
+            <p>Deixe sua festa incrível com nossa decoração pegue-monte! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Pegue monte com balões ou sem balões!</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Futebol de Sabão -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/futebol-sabao1.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/futebol-sabao1.jpg" alt="Futebol de Sabão 1">
+                    <img class="carousel-image" src="imagens/futebol-sabao2.jpg" alt="Futebol de Sabão 2">
+                <!--<img class="carousel-image" src="imagens/futebol-sabao3.jpg" alt="Futebol de Sabão 3">-->
+                    <img class="carousel-image" src="imagens/futebol-sabao4.jpg" alt="Futebol de Sabão 4">
+                    <img class="carousel-image" src="imagens/futebol-sabao5.jpg" alt="Futebol de Sabão 5">
+                    <button class="prev" onclick="plusSlides(-1, 3)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 3)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="videos/futebol-sabao1.jpg" alt="Miniatura Vídeo" onclick="currentSlide(0, 3)">
+                    <img src="imagens/futebol-sabao1.jpg" alt="Miniatura 1" onclick="currentSlide(1, 3)">
+                    <img src="imagens/futebol-sabao2.jpg" alt="Miniatura 2" onclick="currentSlide(2, 3)">
+                <!--<img src="imagens/futebol-sabao3.jpg" alt="Miniatura 3" onclick="currentSlide(, 3)">-->
+                    <img src="imagens/futebol-sabao4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 3)">
+                    <img src="imagens/futebol-sabao5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 3)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Futebol de Sabão</h2>
+            <p>Diversão mais escorregadia garantida com nosso futebol de sabão! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> 10m x 5m, Monitor incluso + Materiais, durante 4 horas!</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Pipoca -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/pipoca1.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/pipoca1.jpg" alt="Pipoca 1">
+                    <video class="carousel-image" controls autoplay loop>
+                        <source src="videos/pipoca2.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <img class="carousel-image" src="imagens/pipoca2.jpg" alt="Pipoca 2">
+                    <img class="carousel-image" src="imagens/pipoca3.jpg" alt="Pipoca 3">
+                    <button class="prev" onclick="plusSlides(-1, 4)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 4)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="videos/pipoca1.jpg" alt="Miniatura Vídeo" onclick="currentSlide(0, 4)">
+                    <img src="imagens/pipoca1.jpg" alt="Miniatura 1" onclick="currentSlide(1, 4)">
+                    <img src="videos/pipoca2.jpg" alt="Miniatura Vídeo" onclick="currentSlide(2, 4)">
+                    <img src="imagens/pipoca2.jpg" alt="Miniatura 2" onclick="currentSlide(3, 4)">
+                    <img src="imagens/pipoca3.jpg" alt="Miniatura 3" onclick="currentSlide(4, 4)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Pipoca</h2>
+            <p>O cheirinho irresistível de pipoca vai conquistar todo mundo na sua festa! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Monitor incluso + Materiais, durante 4 horas!</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Piscina de Bolinha 1,5m -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaM1.jpg" alt="Piscina de Bolinha 1,5m 1">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaM2.jpg" alt="Piscina de Bolinha 1,5m 2">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaM3.jpg" alt="Piscina de Bolinha 1,5m 3">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaM4.jpg" alt="Piscina de Bolinha 1,5m 4">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaM5.jpg" alt="Piscina de Bolinha 1,5m 5">
+                    <button class="prev" onclick="plusSlides(-1, 5)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 5)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="imagens/piscina-bolinhaM1.jpg" alt="Miniatura 1" onclick="currentSlide(0, 5)">
+                    <img src="imagens/piscina-bolinhaM2.jpg" alt="Miniatura 2" onclick="currentSlide(1, 5)">
+                    <img src="imagens/piscina-bolinhaM3.jpg" alt="Miniatura 3" onclick="currentSlide(2, 5)">
+                    <img src="imagens/piscina-bolinhaM4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 5)">
+                    <img src="imagens/piscina-bolinhaM5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 5)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Piscina de Bolinha 1,5m</h2>
+            <p>Um espaço divertido e seguro, ideal para os pequenos brincarem! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Tamanho 1,5m x 1,5m</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Piscina de Bolinha 2m -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaG1.jpg" alt="Piscina de Bolinha 2m 1">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaG2.jpg" alt="Piscina de Bolinha 2m 2">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaG3.jpg" alt="Piscina de Bolinha 2m 3">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaG4.jpg" alt="Piscina de Bolinha 2m 4">
+                    <img class="carousel-image" src="imagens/piscina-bolinhaG5.jpg" alt="Piscina de Bolinha 2m 5">
+                    <button class="prev" onclick="plusSlides(-1, 6)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 6)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="imagens/piscina-bolinhaG1.jpg" alt="Miniatura 1" onclick="currentSlide(0, 6)">
+                    <img src="imagens/piscina-bolinhaG2.jpg" alt="Miniatura 2" onclick="currentSlide(1, 6)">
+                    <img src="imagens/piscina-bolinhaG3.jpg" alt="Miniatura 3" onclick="currentSlide(2, 6)">
+                    <img src="imagens/piscina-bolinhaG4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 6)">
+                    <img src="imagens/piscina-bolinhaG5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 6)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Piscina de Bolinha 2m</h2>
+            <p>Mergulhe na diversão com nossa piscina de bolinhas! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Tamanho 2m x 2m</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Pula Pula 3,5m -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="imagens/pula-pulaG1.jpg" alt="Pula Pula 3,5m 1">
+                    <img class="carousel-image" src="imagens/pula-pulaG2.jpg" alt="Pula Pula 3,5m 2">
+                    <img class="carousel-image" src="imagens/pula-pulaG3.jpg" alt="Pula Pula 3,5m 3">
+                    <img class="carousel-image" src="imagens/pula-pulaG4.jpg" alt="Pula Pula 3,5m 4">
+                    <img class="carousel-image" src="imagens/pula-pulaG5.jpg" alt="Pula Pula 3,5m 5">
+                    <button class="prev" onclick="plusSlides(-1, 7)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 7)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="imagens/pula-pulaG1.jpg" alt="Miniatura 1" onclick="currentSlide(0, 7)">
+                    <img src="imagens/pula-pulaG2.jpg" alt="Miniatura 2" onclick="currentSlide(1, 7)">
+                    <img src="imagens/pula-pulaG3.jpg" alt="Miniatura 3" onclick="currentSlide(2, 7)">
+                    <img src="imagens/pula-pulaG4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 7)">
+                    <img src="imagens/pula-pulaG5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 7)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Pula Pula 3,5m</h2>
+            <p>Um divertido pula-pula de 3,5m para garantir a alegria da criançada! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Tamanho 3,5m x 3,5m</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Pula Pula 2,5m -->
+        <div class="item">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-image" src="imagens/pula-pulaM1.jpg" alt="Pula Pula 2,5m 1">
+                    <img class="carousel-image" src="imagens/pula-pulaM2.jpg" alt="Pula Pula 2,5m 2">
+                    <img class="carousel-image" src="imagens/pula-pulaM3.jpg" alt="Pula Pula 2,5m 3">
+                    <img class="carousel-image" src="imagens/pula-pulaM4.jpg" alt="Pula Pula 2,5m 4">
+                    <img class="carousel-image" src="imagens/pula-pulaM5.jpg" alt="Pula Pula 2,5m 5">
+                    <button class="prev" onclick="plusSlides(-1, 8)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 8)">&#10095;</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="imagens/pula-pulaM1.jpg" alt="Miniatura 1" onclick="currentSlide(0, 8)">
+                    <img src="imagens/pula-pulaM2.jpg" alt="Miniatura 2" onclick="currentSlide(1, 8)">
+                    <img src="imagens/pula-pulaM3.jpg" alt="Miniatura 3" onclick="currentSlide(2, 8)">
+                    <img src="imagens/pula-pulaM4.jpg" alt="Miniatura 4" onclick="currentSlide(3, 8)">
+                    <img src="imagens/pula-pulaM5.jpg" alt="Miniatura 5" onclick="currentSlide(4, 8)">
+                </div>
+            </div>
+            <h2 class="titulo-foto">Pula Pula 2,5m</h2>
+            <p>Perfeito para festas menores, pula-pula de 2,5m diversão em qualquer evento! 🎉</p>
+            <div class="details">
+                <p><strong>Especificações:</strong> Tamanho 2,5m x 2,5m</p>
+            </div>
+            <div class="share-buttons">
+                <button onclick="share()"><strong>Compartilhar</strong></button>
+            </div>
+        </div>
+
+        <!-- Formulário de Contato 
+        <section class="contact-form">
+            <h2>Faça um orçamento conosco sem compromisso!</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="button" onclick="sendToWhatsApp()"><strong>Enviar para o whatsApp</strong></button>
+            </form>
+        </section>-->
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/alegria_movimento_locacoes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram-button">
+            <img src="imagens/instagram-icon.png" alt="Instagram" class="instagram-icon">
+        </a>        
+        <p>&copy; 2024 Alegria em Movimento Locações. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

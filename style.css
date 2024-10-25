@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5DEB3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #a00b0b; /* Cor de fundo do header */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    margin: 0; /* Remove margens */
+}
+
+.header-container {
+    display: flex; /* Usar flexbox para alinhar logo e texto horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente no centro */
+}
+
+.logo {
+    width: 100px; /* Ajuste a largura da logo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a logo e o texto */
+}
+
+.text-container {
+    display: flex; /* Flexbox para o texto */
+    flex-direction: column; /* Alinha texto verticalmente */
+}
+
+.titulo {
+    margin: 0; /* Remove margens extras */
+}
+
+.text-container h1 {
+    font-size: 25px; /* Tamanho para o título principal */
+    margin-bottom: 5px; /* Pequeno espaço entre h1 e h2 */
+}
+
+.text-container h2 {
+    font-size: 20px; /* Tamanho para o subtítulo */
+    font-weight: normal; /* Opcional: deixa o subtítulo menos chamativo */
+}
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item {
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.148);
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-image {
+    width: 400px; /* Tamanho fixo para todas as imagens */
+    height: 400px; /* Altura fixa para manter as proporções */
+    object-fit: cover; /* A imagem será cortada para preencher a área */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.299);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px; /* Lado esquerdo */
+}
+
+.next {
+    right: 10px; /* Lado direito */
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 50px;
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    object-fit: cover; /* A imagem será cortada para preencher a área */
+}
+
+.thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+.titulo-foto {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.details {
+    display: flexbox;
+    margin-top: 10px;
+}
+
+.share-buttons button {
+    bottom: 0; /* Alinha na parte inferior */
+    background-color: #a00b0b; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 10px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s; /* Transição suave */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.164); /* Sombra */
+    width: 100%; /* Ocupa a largura total */
+    display: block; /* Ocupa a largura total */
+    margin: 10px auto; /* Centraliza */
+    line-height: normal; /* Altura da linha normal */
+}
+
+button:hover {
+    background-color:#bd1515; /* Cor ao passar o mouse */
+}
+
+button {
+    background-color:#a00b0b;
+    color: white;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.164);
+    margin: 10px auto; /* Centraliza */
+    display: block; /* Ocupa a largura total */
+}
+
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.instagram-button {
+    display: inline-block;
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.instagram-button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.instagram-icon {
+    width: 80px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: auto;
+    vertical-align: middle;
+}
+
+footer {
+    height: 30px; /* Altura do rodapé */
+    display: flex; /* Flexbox para alinhar horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente no centro */
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    z-index: 1000; /* Coloca o rodapé acima de outros elementos */
+    width: 100%; /* Ocupa a largura total */
+    bottom: 0; /* Alinha na parte inferior */
+    margin-top: auto; /* Alinha na parte inferior */
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno */
+    background:#a00b0b;
+    color: white;
+}
